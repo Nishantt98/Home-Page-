@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: aliceblue;
+    box-shadow: 0 5px 3px rgb(224, 220, 220);
+}
+
+.logo {
+    font-family: 'poppins';
+    color: orangered;
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 35px;
+    font-family: 'poppins';
+    cursor: pointer;
+    font-size: 19px;
+
+}
+
+ul li {
+    list-style-type: none;
+}
+
+
+li a {
+    text-decoration: none;
+    color: rgb(82, 83, 83);
+}
+
+li a:hover {
+    color: orangered;
+    border-bottom: 2px solid orangered;
+}
+
+.icon i {
+
+    padding-right: 15px;
+    font-size: 22px;
+    color: rgb(130, 127, 127);
+}
+
+
+.icon i:hover {
+    color: orangered;
+}
+
+
+
+.main .wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main .wrapper-holder {
+    display: grid;
+    grid-template-columns:repeat(3,100%);
+
+    animation: slider 20s ease-in-out infinite alternate;
+
+
+}
+
+.main #slider-img1 {
+    height: 800px;
+    background-size: contain;
+    background-image: url(image1.jpeg);
+    background-position: center;
+}
+
+.main #slider-img2 {
+    height: 800px;
+    background-size: cover;
+    object-fit: contain;
+    background-image: url(image2.jpeg);
+    background-position: center;
+}
+
+.main #slider-img3 {
+    height: 800px;
+    background-size: cover;
+    background-image: url(image3.jpeg);
+    background-position: center;
+}
+
+
+.main .button-holder .button {
+    background-color:rgb(228, 227, 227);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  
+    display: inline-block;
+    margin: .3rem;
+    
+
+}
+
+.main .button-holder {
+    position: absolute;
+    left: 45%;
+    bottom: 50%;
+    left: 90%;
+    display: flex;
+    flex-direction: column;
+    
+
+
+
+}
+
+.button:hover {
+    box-shadow: 0px 0px 7px 4px rgba(0, 255, 255, 0.6);
+}
+
+@keyframes slider{
+    0% {
+        transform: translateX(0%);
+    }
+
+    10% {
+        transform: translateX(-100%);
+    }
+
+    20% {
+        transform: translateX(-100%);
+    }
+
+    30% {
+        transform: translateX(-200%);
+    }
+
+    40% {
+        transform: translateX(-200%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    60% {
+        transform: translateX(-300%);
+    }
+
+    70% {
+        transform: translateX(-300%);
+    }
+
+    80% {
+        transform: translateX(-300%);
+    }
+
+    90% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+
+}
+
+
+
+.Slide {
+    position: absolute;
+}
+
+.heading h1 {
+    text-align: center;
+    font-family: 'poppins';
+    margin-top: 5%;
+    font-size: 38px;
+}
+
+.heading h1 span {
+    color: orangered;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    height: 100%;
+}
+
+.left-intro {
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 19px;
+    font-family: 'poppins';
+    padding-right: 30px;
+
+}
+
+.left-intro h4 {
+    border-left: 3px solid rgb(248, 133, 91);
+    padding-left: 30px;
+    padding-bottom: 20px;
+    margin-right: 40px;
+    color: rgb(179, 167, 167);
+
+}
+
+.left-intro span {
+    color: orangered;
+}
+
+.image img {
+    height: 400px;
+}
+
+.right-information {
+    font-family: 'poppins';
+    font-size: 24px;
+    margin-top: 5px;
+
+
+}
+
+.right-information h3 {
+    padding-bottom: 15px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.right-information span {
+    color: orangered;
+}
+
+.right-information p {
+    font-family: 'poppins';
+    font-weight: 300;
+    color: rgb(159, 157, 157);
+    font-size: 18px;
+    width: 400px;
+    margin-right: 70px;
+}
+
+.right-information .sec-p {
+    margin-top: 55px;
+    font-family: 'poppins';
+    color: rgb(105, 103, 103);
+    font-weight: bold;
+}
+
+.main3 {
+    display: flex;
+}
+
+.main3 img {
+    height: 450px;
+    width: 750px;
+    margin-top: 7%;
+}
+
+.main3-right-text {
+    font-family: 'poppins';
+    word-spacing: 2px;
+    margin-top: 12%;
+    margin-left: 4%;
+}
+
+.main3-right-text h1 {
+    padding-bottom: 30px;
+
+}
+
+.main3-right-text p {
+    font-family: 'poppins';
+    font-size: 22px;
+    color: rgb(159, 157, 157);
+    font-weight: 200;
+
+
+}
+
+.main3-right-text span {
+    color: orangered;
+}
+
+.main3-right-text .sec-p {
+    margin-top: 55px;
+    font-family: 'poppins';
+    color: rgb(105, 103, 103);
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.items {
+    padding-left: 6%;
+    padding-top: 4%;
+}
+
+.items img {
+    height: 350px;
+    width: 380px;
+
+}
+
+.items img:hover {
+    box-shadow: 0 0 3px gray;
+
+}
+
+.price {
+    font-weight: 600;
+    font-family: 'poppins';
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+    height: 30px;
+    padding: 16px;
+    font-size: 19px;
+
+}
+
+.items p {
+    font-family: "poppins";
+    font-size: 18px;
+    padding: 32px 0 0 18px;
+
+}
+
+.mid-page1 {
+    display: flex;
+}
+
+
+.main4-bottom-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-family: "poppins";
+    color: rgb(105, 103, 103);
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 55px;
+
+
+
+}
+
+.main4-bottom-text h4 {
+    border-bottom: 2px solid rgb(105, 103, 103);
+}
+
+
+
+.main-footer {
+    height: 400px;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+
+
+
+}
+
+.inner-footer-fashion {
+    color: rgb(120, 118, 118);
+    font-weight: 500;
+    font-size: 19px;
+    margin-top: -3%;
+    font-family: sans-serif;
+
+}
+
+.inner-footer-fashion h1 {
+    color: aliceblue;
+
+}
+
+.inner-footer-fashion h4 {
+    padding-top: 25px;
+    font-family: 'poppins';
+}
+
+.inner-footer-fashion h1:hover {
+    color: orangered;
+
+}
+
+.inner-footer-sidemap {
+    color: rgb(120, 118, 118);
+    font-weight: 500;
+    font-size: 19px;
+    column-gap: 10px;
+    font-family: sans-serif;
+}
+
+.inner-footer-sidemap h1 {
+    color: aliceblue;
+
+}
+
+
+
+.inner-footer-sidemap h4 {
+    padding-top: 25px;
+    font-family: 'poppins';
+}
+
+.inner-footer-sidemap h1:hover {
+    color: orangered;
+
+}
+
+
+
+.inner-footer-social {
+    color: rgb(120, 118, 118);
+    font-weight: 500;
+    font-size: 19px;
+    font-family: "poppins";
+    font-weight: 500;
+    margin-top: -8%;
+    font-family: sans-serif;
+}
+
+
+.inner-footer-social .icon i {
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+.inner-footer-social h1 {
+    color: aliceblue;
+
+}
+
+.inner-footer-social h1:hover {
+    color: orangered;
+
+}
